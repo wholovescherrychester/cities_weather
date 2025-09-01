@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{{city_from.alternate_names}} | {{city_to.alternate_names}}{% endblock title %}
+
+{% block header %}
+{% include "core/includes/to_home_header.html" %}
+{% endblock header %}
+
+{% block content %}
+<div class="distance-card__container">
+    <div class="distance-card__text-wrapper">
+        <p>Расстояние</p>
+        <h1>
+            <a href="{% url "main:temp_city" city_from.slug%}">{{city_from.alternate_names}}</a>
+             - 
+            <a href="{% url "main:temp_city" city_to.slug%}">{{city_to.alternate_names}}</a>
+            <br>{{distance}} км
+        </h1>
+    </div>
+</div>
+{% endblock content %}

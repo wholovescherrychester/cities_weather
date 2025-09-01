@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Погода | {{city.alternate_names}}{% endblock title %}
+
+{% block header %}
+{% include "core/includes/to_home_header.html" %}
+{% endblock header %}
+
+{% block content %}
+<div class="city-card__container">
+    <div class="city-card__info">
+        <h1>{{city.alternate_names}}</h1>
+        <img src={{icon_url}} alt="{{more_status}}">
+        <div class="city-card__status">
+            <h2>{{temp}} &deg;C</h2>
+            <p>{{more_status}}</p>
+        </div>
+    </div>
+    <div class="city-card__date-time">
+        <p>{{current_date}}</p>
+        <p>{{current_time}}</p>
+    </div>
+    
+</div>
+{% endblock content %}

@@ -1,0 +1,5 @@
+<div id="cities-list" class="cities-list">
+    {% for city in cities %}
+        <p onclick="setCityValue(this,'right')">{{city.alternate_names}}</p>
+    {% endfor %}
+</div>

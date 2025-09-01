@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-23 17:11+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\core\views.py:32
+msgid "rain"
+msgstr "Дождь"
+
+msgid "clear sky"
+msgstr "Ясное небо"
+
+msgid "broken clouds"
+msgstr "Смешанные облака"
+
+msgid "shower rain"
+msgstr "Ливень"
+
+msgid "thunderstorm"
+msgstr "Гроза"
+
+msgid "snow"
+msgstr "Снег"
+
+msgid "thunderstorm with light rain"
+msgstr "Гроза с небольшим дождем"
+
+msgid "thunderstorm with rain"
+msgstr "Гроза с дождем"
+
+msgid "thunderstorm with heavy rain"
+msgstr "Гроза с сильным дождем"
+
+msgid "light thunderstorm"
+msgstr "Несильная гроза"
+
+msgid "heavy thunderstorm"
+msgstr "Сильная гроза"
+
+msgid "ragged thunderstorm"
+msgstr "Рваная гроза"
+
+msgid "thunderstorm with light drizzle"
+msgstr "Гроза с небольшой моросью"
+
+msgid "thunderstorm with drizzle"
+msgstr "Гроза с моросью"
+
+msgid "thunderstorm with heavy drizzle"
+msgstr "Гроза с сильной моросью"
+
+msgid "light intensity drizzle"
+msgstr "Морось слабой интенсивности"
+
+msgid "drizzle"
+msgstr "Морось"
+
+msgid "heavy intensity drizzle"
+msgstr "Морось сильной интенсивности"
+
+msgid "light intensity drizzle rain"
+msgstr "Морось слабой интенсивности с дождем"
+
+msgid "drizzle rain"
+msgstr "Морось с дождем"
+
+msgid "heavy intensity drizzle rain"
+msgstr "Морось сильной интенсивности с дождем"
+
+msgid "shower rain and drizzle"
+msgstr "Ливневый дождь и морось"
+
+msgid "heavy shower rain and drizzle"
+msgstr "Сильный ливень и морось"
+
+msgid "shower drizzle"
+msgstr "Моросящий дождь"
+
+msgid "light rain"
+msgstr "Легкий дождь"
+
+msgid "moderate rain"
+msgstr "Умеренный дождь"
+
+msgid "heavy intensity rain"
+msgstr "Сильный дождь"
+
+msgid "very heavy rain"
+msgstr "Очень сильный дождь"
+
+msgid "extreme rain"
+msgstr "Сильный дождь"
+
+msgid "freezing rain"
+msgstr "Ледяной дождь"
+
+msgid "light intensity shower rain"
+msgstr "Слабый ливень с дождем"
+
+msgid "heavy intensity shower rain"
+msgstr "Сильный ливень с дождем"
+
+msgid "ragged shower rain"
+msgstr "Рваный ливень с дождем"
+
+msgid "light snow"
+msgstr "Легкий снег"
+
+msgid "heavy snow"
+msgstr "Сильный снег"
+
+msgid "sleet"
+msgstr "Мокрый снег"
+
+msgid "light shower sleet"
+msgstr "Легкий ливень с мокрым дождем"
+
+msgid "shower sleet"
+msgstr "Ливень с мокрым дождем"
+
+msgid "light rain and snow"
+msgstr "Легкий дождь со снегом"
+
+msgid "rain and snow"
+msgstr "Дождь со снегом"
+
+msgid "light shower snow"
+msgstr "Легкий ливень со снегом"
+
+msgid "shower snow"
+msgstr "Ливень с дождем"
+
+msgid "heavy shower snow"
+msgstr "Сильный ливень с дождем"
+
+msgid "mist"
+msgstr "Туман"
+
+msgid "smoke"
+msgstr "Туман"
+
+msgid "haze"
+msgstr "Туман"
+
+msgid "sand/dust whirls"
+msgstr "Песчаные вихри"
+
+msgid "fog"
+msgstr "Туман"
+
+msgid "sand"
+msgstr "Песок"
+
+msgid "dust"
+msgstr "Пыль"
+
+msgid "volcanic ash"
+msgstr "Вулканический пепел"
+
+msgid "squalls"
+msgstr "Шквалы"
+
+msgid "tornado"
+msgstr "Торнадо"
+
+msgid "few clouds"
+msgstr "Небольшая облачность"
+
+msgid "scattered clouds"
+msgstr "Рассеянная облачность"
+
+msgid "overcast clouds"
+msgstr "Пасмурно"

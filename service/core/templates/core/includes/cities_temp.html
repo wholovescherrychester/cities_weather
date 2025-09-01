@@ -1,0 +1,5 @@
+<div id="cities-list" class="cities-list">
+    {% for city in cities %}
+        <a href="{% url "main:temp_city" city.slug %}">{{city.alternate_names}}</a>
+    {% endfor %}
+</div>
