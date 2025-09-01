@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nata+Sans:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --transition-duration: .25s;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter";
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.main-container {
+    max-width: 780px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Ссылка */
+.default-link {
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+nav h1,
+nav a {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color var(--transition-duration);
+}
+
+nav a:hover {
+    color: rgb(192, 196, 196);
+}
+
+.home-form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Форма на начальном экране */
+.weather-form__box {
+    background-image: url('../img/clouds.png');
+}
+
+.distance-form__box {
+    background-image: url('../img/map_above.png');
+    background-size: cover;
+}
+
+/* Центральный бокс для формы */
+.form__center-box {
+    width: 200px;
+    height: 4rem;
+}
+
+/* Текстовое поле ввода в форме */
+.form__input {
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 0.5px solid rgb(145, 151, 151);
+    z-index: 10;
+    width: 100%;
+}
+
+.form__input::placeholder {
+    text-align: center;
+}
+
+.cities-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 100;
+    font-size: 1.3rem;
+    max-height: 5.4rem;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.cities-list a, .cities-list p{
+    text-align: center;
+    user-select: none;
+    overflow-wrap: break-word;
+    color: black;
+    border-bottom:0.2px solid rgb(201, 201, 201)
+}
+
+.cities-list a:hover, .cities-list p:hover {
+background-color: rgb(189, 231, 255);
+}
+
+.cities-list a:last-child, .cities-list p:last-child{
+    border-bottom:none
+}
+
+.cities-list p {
+    width: inherit;
+}
+
+/* Заголовок формы */
+.form__title {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.form__title__yellow-shadow {
+    text-shadow: rgb(154, 154, 0) 1px 3px 2px;
+}
+
+.distance-form__center-box form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.distance-form__left-wrapper input,
+.distance-form__left-wrapper div,
+.distance-form__right-wrapper input,
+.distance-form__right-wrapper div {
+    width: 200px;
+}
+
+.distance-form__btn {
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}

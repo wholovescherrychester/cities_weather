@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Главная{% endblock title %}
+
+{% block header %}
+<nav>
+    <h1>Погода | Расстояние</h1>
+</nav>
+{% endblock header %}
+
+{% block content %}
+    
+    <!-- Погода -->
+    <div class="weather-form__box home-form-box">
+        <h1 class="form__title">Узнать погоду</h1>
+        <div class="form__center-box">
+            <input name="city" type="text" placeholder="Выберите город" class="form__input"
+            hx-trigger="keyup" hx-get="{% url "main:cities_temp" %}" hx-target=".weather-form__box #cities-list">
+            {% include "core/includes/cities_temp.html" %}
+        </div>
+    </div>
+
+    <!-- Расстояние -->
+    <div class="distance-form__box home-form-box">
+        <h1 class="form__title form__title__yellow-shadow">Определить расстояние между</h1>
+        <div class="form__center-box distance-form__center-box">
+            <form action="{% url "main:distance" %}" method="get">
+                    <div class="distance-form__left-wrapper">
+                        <input name="from" type="text" placeholder="Выберите город" class="form__input" id="from-city-slug"
+                        hx-trigger="keyup" hx-get="{% url "main:cities_dist_1" %}" hx-target=".distance-form__left-wrapper #cities-list"
+                        >
+                        {% include "core/includes/cities_dist_1.html" %}
+                    </div>
+                    <h1 class="form__title form__title__yellow-shadow">и</h1>
+                    <div class="distance-form__right-wrapper">
+                        <input name="to" type="text" placeholder="Выберите город" class="form__input" id="to-city-slug"
+                        hx-trigger="keyup" hx-get="{% url "main:cities_dist_2" %}" hx-target=".distance-form__right-wrapper #cities-list"
+                        >
+                        {% include "core/includes/cities_dist_2.html" %}
+                    </div>
+                <button onclick="checkMinCities(event)" class="distance-form__btn" type="submit">Посчитать</button>
+            </form>
+        </div>   
+    </div>
+{% endblock content %}
