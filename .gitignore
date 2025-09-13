@@ -13,3 +13,6 @@ wheels/
 .toml
 README.md
 uv.lock
+
+prod_settings.py
+local_settings.py
